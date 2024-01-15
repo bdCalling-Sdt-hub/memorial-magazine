@@ -1,3 +1,12 @@
+"use client";
+import Banner from "@/components/Home/Banner";
+import Footer from "@/components/shared/Footer";
+
 export default function Home() {
-  return <h1 className="text-center text-2xl">Memorial Moments Magazine</h1>;
+  return (
+    <>
+      <Banner />
+      <Footer />
+    </>
+  );
 }
