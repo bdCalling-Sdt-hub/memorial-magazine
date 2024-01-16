@@ -1,10 +1,10 @@
-import Navbar from "../shared/Navbar";
+import Navbar from "../../shared/Navbar";
 
 const Banner = () => {
   return (
     <div className="banner">
       <Navbar />
-      <div className="grid grid-cols-2 gap-20 items-center container">
+      <div className="grid grid-cols-2 gap-20 items-center container py-16">
         <div>
           <div className="space-y-3">
             <h2 className="text-white  text-xl">

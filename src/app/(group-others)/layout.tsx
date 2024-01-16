@@ -22,7 +22,7 @@ const GroupLayout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
       </div>
-      <div>{children}</div>
+      <div className="min-h-screen">{children}</div>
       <Footer />
     </div>
   );

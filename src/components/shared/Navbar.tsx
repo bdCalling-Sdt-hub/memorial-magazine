@@ -41,9 +41,9 @@ const Navbar = () => {
                 <Link href={item.path}>{item.title}</Link>
               </li>
             ))}
-            <button className="text-white border px-2 py-3 rounded-md flex items-center gap-1">
+            <button className="text-white border px-2 py-3 rounded-md flex items-center gap-1 text-sm">
               Contact us
-              <IconArrowRight />
+              <IconArrowRight size={18} />
             </button>
           </ul>
         </div>
