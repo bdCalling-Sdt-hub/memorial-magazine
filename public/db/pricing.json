@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Ouarter Page",
+    "price": 99,
+    "photo": 3,
+    "month": "Month",
+    "facilities": [
+      "All Peoples Stories",
+      "Veteran Stories",
+      "Pets Stories",
+      "Upload 3 photos on one story",
+      "Post story in between 1500 words",
+      "Post 1 stories at a time"
+    ]
+  },
+  {
+    "title": "Half a Page",
+    "price": 250,
+    "photo": 4,
+    "month": "6 Months",
+    "facilities": [
+      "All Peoples Stories",
+      "Veteran Stories",
+      "Pets Stories",
+      "Upload 4 photos on one story",
+      "Post story in between 2500 words",
+      "Post 1 stories at a time"
+    ]
+  },
+  {
+    "title": "Full Page",
+    "price": 500,
+    "photo": 6,
+    "month": "Year",
+    "facilities": [
+      "All Peoples Stories",
+      "Veteran Stories",
+      "Pets Stories",
+      "Upload 6 photos on one story",
+      "Post story in between 5500 words",
+      "Post 1 stories at a time"
+    ]
+  }
+]

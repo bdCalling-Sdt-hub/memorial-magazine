@@ -2,8 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #f4faff;
+}
+
 .banner {
   background: linear-gradient(#0873dec9, #01274f63), url("/images/bg.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.swiper-pagination-bullet {
+  width: 30px !important;
+  height: 4px !important;
+  border-radius: 0% !important;
+}
+
+.hr-lines {
+  position: relative;
+  max-width: 300px;
+  text-align: center;
+  font-size: 50px;
+  color: #0071e3;
+}
+
+.hr-lines:before {
+  content: " ";
+  height: 1px;
+  width: 130px;
+  background: #0071e3;
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 0;
+}
+
+.hr-lines:after {
+  content: " ";
+  height: 1px;
+  width: 130px;
+  background: #0071e3;
+  display: block;
+  position: absolute;
+  top: 35%;
+  right: 0;
 }

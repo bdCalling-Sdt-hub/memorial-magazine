@@ -7,10 +7,13 @@ const Button: React.FC<IButton> = ({
   className = "",
   icon,
   onClick,
+  type,
 }) => {
   return (
     <button
       className={`${className} justify-center text-center  rounded-md text-white px-4 py-3 flex items-center gap-2 text-sm`}
+      type={type}
+      onClick={onClick}
     >
       {children}
       {icon && <span>{icon}</span>}
