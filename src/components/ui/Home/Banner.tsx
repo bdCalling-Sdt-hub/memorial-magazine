@@ -27,7 +27,7 @@ const Banner = () => {
         </div>
         <div>
           <img
-            src="/images/mobile.png"
+            src="/images/bannerImg.png"
             className="ml-auto w-4/6"
             alt="Banner"
           />

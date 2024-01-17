@@ -3,6 +3,7 @@ import Footer from "@/components/shared/Footer";
 import Banner from "@/components/ui/Home/Banner";
 import Contact from "@/components/ui/Home/Contact";
 import Help from "@/components/ui/Home/Help";
+import LatestNews from "@/components/ui/Home/LatestNews";
 import Pricing from "@/components/ui/Home/Pricing";
 import QualityService from "@/components/ui/Home/QualityService";
 import RecentStories from "@/components/ui/Home/RecentStories";
@@ -19,6 +20,7 @@ export default function Home() {
       <Team />
       <Testimonials />
       <Pricing />
+      <LatestNews />
       <Contact />
       <Footer />
     </>

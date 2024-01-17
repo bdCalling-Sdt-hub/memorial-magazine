@@ -1,6 +1,6 @@
 "use client";
 import HeadingText from "@/util/HeadingText";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -20,8 +20,9 @@ const Testimonials = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           centeredSlides={true}
+          autoplay={true}
           style={{
             width: "100%",
             height: "280px",

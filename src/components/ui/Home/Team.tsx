@@ -29,7 +29,7 @@ const Team = () => {
         <div className="mb-24">
           <HeadingText className="text-center">Our Team</HeadingText>
         </div>
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid grid-cols-4 gap-8 mx-32">
           {teams.map((team, index) => (
             <div key={index}>
               <img src={team.img} className="w-full" alt="" />

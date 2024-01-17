@@ -23,7 +23,7 @@ const Contact = () => {
         ></textarea>
         <Button
           type="submit"
-          className="bg-primary uppercase px-4 mx-auto col-span-12"
+          className="bg-primary text-white uppercase px-4 mx-auto col-span-12"
         >
           Send Message
         </Button>

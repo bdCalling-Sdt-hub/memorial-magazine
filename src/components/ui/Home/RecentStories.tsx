@@ -1,5 +1,6 @@
 "use client";
 import HeadingText from "@/util/HeadingText";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import news from "../../../../public/db/news.json";
 
@@ -23,12 +24,12 @@ const RecentStories = () => {
       <Swiper
         spaceBetween={15}
         slidesPerView={6}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        modules={[Autoplay]}
+        autoplay={true}
       >
-        {news.map((news, index) => (
+        {news.map((item, index) => (
           <SwiperSlide key={index}>
-            <NewsCard data={news} />
+            <NewsCard data={item} />
           </SwiperSlide>
         ))}
       </Swiper>

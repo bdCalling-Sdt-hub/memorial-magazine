@@ -18,7 +18,7 @@ const Pricing = () => {
             help you honor and celebrate the life of your loved one.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8 p-10">
+        <div className="grid grid-cols-3 gap-4 p-10">
           {pricingList.map((item, index) => (
             <div key={index} className="bg-white rounded-md p-7">
               <h2 className="text-2xl font-semibold  flex items-center justify-center gap-3">
