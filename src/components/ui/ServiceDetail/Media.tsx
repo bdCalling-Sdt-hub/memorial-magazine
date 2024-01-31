@@ -21,7 +21,7 @@ const Media = () => {
             Memorial Moment Support
           </h2>
           <p>
-            If you'd like to speak to us directly, call free 24 hours a day.
+            If you&#39;d like to speak to us directly, call free 24 hours a day.
           </p>
           <div className="mt-5">
             <p>(303) 274-8750</p>
