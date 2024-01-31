@@ -1,7 +1,13 @@
+import Contact from "@/components/common/Contact";
+import QualityService from "@/components/common/QualityService";
+
 const ServicesPage = () => {
   return (
-    <div>
-      <h2>Services Page</h2>
+    <div className="container my-16">
+      <div className="mb-24">
+        <QualityService />
+      </div>
+      <Contact />
     </div>
   );
 };

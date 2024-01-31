@@ -1,7 +1,13 @@
+import Contact from "@/components/common/Contact";
+import Pricing from "@/components/common/Pricing";
+
 const PricingPage = () => {
   return (
-    <div>
-      <h2>Pricing page</h2>
+    <div className="container my-16">
+      <Pricing />
+      <div className="my-20">
+        <Contact />
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import Button from "@/util/Button";
-import HeadingText from "@/util/HeadingText";
+import HeadingDescription from "@/util/HeadingDescription";
 import { IconArrowRight } from "@tabler/icons-react";
 
 const LatestNews = () => {
@@ -23,13 +23,11 @@ const LatestNews = () => {
   ];
   return (
     <div className="container">
-      <div className="mb-12">
-        <HeadingText className="text-center">Latest News</HeadingText>
-        <p className="text-center">
-          We offer a wide range of funeral services and arrangements to <br />{" "}
-          help you honor and celebrate the life of your loved one.
-        </p>
-      </div>
+      <HeadingDescription
+        className="text-center mb-14"
+        headingText="Latest News"
+        descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
+      />
       <div className="grid grid-cols-4 gap-5">
         {latestNews.map((item, index) => (
           <div

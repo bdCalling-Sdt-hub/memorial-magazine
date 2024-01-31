@@ -1,7 +1,7 @@
-import { INewsCard } from "@/types";
+import { IStoryCard } from "@/types";
 import React from "react";
 
-const NewsCard: React.FC<{ data: INewsCard }> = ({ data }) => {
+const StoryCard: React.FC<{ data: IStoryCard }> = ({ data }) => {
   return (
     <div className="relative rounded-md">
       <img src={data.image} className="w-full h-96 rounded-md" alt="" />
@@ -13,4 +13,4 @@ const NewsCard: React.FC<{ data: INewsCard }> = ({ data }) => {
   );
 };
 
-export default NewsCard;
+export default StoryCard;

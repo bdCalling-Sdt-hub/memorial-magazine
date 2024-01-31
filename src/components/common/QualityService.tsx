@@ -1,22 +1,28 @@
-import Button from "@/util/Button";
-import HeadingText from "@/util/HeadingText";
-import { IconArrowRight } from "@tabler/icons-react";
+"use client";
+import HeadingDescription from "@/util/HeadingDescription";
+import { usePathname } from "next/navigation";
+import ServiceCard from "./ServiceCard";
 
 const QualityService = () => {
+  const path = usePathname();
+
   const qualityService = [
     {
+      id: 1,
       image: "/images/service1.png",
       title: "All People Memorial Moments",
       description:
         "Memorial Moments Magazine People Stories section serves as a platform to celebrate the diverse, touching, and impactful narratives of individuals, foste",
     },
     {
+      id: 2,
       image: "/images/service2.png",
       title: "Veterans Memorial Moments",
       description:
         "This specialized section within Memorial Moments Magazine serves as a tribute to the dedicated individuals who serve or have served in uniformed profession",
     },
     {
+      id: 3,
       image: "/images/service3.png",
       title: "Pet Memorial Moments",
       description:
@@ -24,30 +30,16 @@ const QualityService = () => {
     },
   ];
   return (
-    <div className="bg-[#eaf3fc] py-20 my-24">
+    <div className={`${path === "/services" ? "" : "bg-secondary"}`}>
       <div className="container">
-        <div className="mb-12">
-          <HeadingText className="text-center">Quality Services</HeadingText>
-          <p className="text-center">
-            We offer a wide range of funeral services and arrangements to <br />{" "}
-            help you honor and celebrate the life of your loved one.
-          </p>
-        </div>
+        <HeadingDescription
+          className="text-center mb-14"
+          headingText="Quality Services"
+          descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
+        />
         <div className="grid grid-cols-3 gap-4">
           {qualityService.map((item, index) => (
-            <div key={index} className="bg-white rounded-xl">
-              <img src={item.image} className="rounded-t-md w-full" alt="" />
-              <div className="p-4 space-y-4">
-                <h2 className="text-xl font-semibold">{item.title}</h2>
-                <p>{item.description}</p>
-                <Button
-                  className="border w-full text-gray-400"
-                  icon={<IconArrowRight size={18} />}
-                >
-                  More Details
-                </Button>
-              </div>
-            </div>
+            <ServiceCard key={index} data={item} />
           ))}
         </div>
       </div>

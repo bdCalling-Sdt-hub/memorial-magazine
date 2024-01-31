@@ -2,7 +2,7 @@ import Navbar from "../../shared/Navbar";
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div className="banner h-[900px]">
       <Navbar />
       <div className="grid grid-cols-2 gap-20 items-center container py-16">
         <div>

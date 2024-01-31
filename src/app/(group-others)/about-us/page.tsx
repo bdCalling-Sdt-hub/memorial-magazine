@@ -1,7 +1,15 @@
+import Contact from "@/components/common/Contact";
+import RecentStories from "@/components/common/RecentStories";
+import Team from "@/components/common/Team";
+import More from "@/components/ui/About/More";
+
 const AboutPage = () => {
   return (
-    <div>
-      <h2>About page</h2>
+    <div className="container my-20">
+      <More />
+      <RecentStories />
+      <Team />
+      <Contact />
     </div>
   );
 };

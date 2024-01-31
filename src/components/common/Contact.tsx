@@ -1,17 +1,15 @@
 import Button from "@/util/Button";
-import HeadingText from "@/util/HeadingText";
+import HeadingDescription from "@/util/HeadingDescription";
 import Input from "@/util/Input";
 
 const Contact = () => {
   return (
-    <div className="container my-24">
-      <div className="text-center">
-        <HeadingText>Contact Us</HeadingText>
-        <p>
-          We offer a wide range of funeral services and arrangements to <br />{" "}
-          help you honor and celebrate the life of your loved one.
-        </p>
-      </div>
+    <div className="container">
+      <HeadingDescription
+        className="text-center mb-14"
+        headingText="Quality Services"
+        descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
+      />
       <form className="grid grid-cols-12 gap-4 mt-10">
         <Input className="col-span-6" placeholder="Full Name" />
         <Input className="col-span-6" placeholder="Phone Number" />

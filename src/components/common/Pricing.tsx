@@ -1,24 +1,25 @@
+"use client";
 import Button from "@/util/Button";
-import HeadingText from "@/util/HeadingText";
+import HeadingDescription from "@/util/HeadingDescription";
 import {
   IconArrowRight,
   IconCheck,
   IconChessQueenFilled,
 } from "@tabler/icons-react";
-import pricingList from "../../../../public/db/pricing.json";
+import { usePathname } from "next/navigation";
+import pricingList from "../../../public/db/pricing.json";
 
 const Pricing = () => {
+  const path = usePathname();
   return (
-    <div className="bg-[#eaf3fc] py-16 my-24">
+    <div className={`${path === "/pricing" ? "" : "bg-secondary"}`}>
       <div className="container">
-        <div className="mb-5">
-          <HeadingText className="text-center">Pricing</HeadingText>
-          <p className="text-center">
-            We offer a wide range of funeral services and arrangements to <br />{" "}
-            help you honor and celebrate the life of your loved one.
-          </p>
-        </div>
-        <div className="grid grid-cols-3 gap-4 p-10">
+        <HeadingDescription
+          className="text-center mb-14"
+          headingText="Pricing"
+          descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
+        />
+        <div className="grid grid-cols-3 gap-4 ">
           {pricingList.map((item, index) => (
             <div key={index} className="bg-white rounded-md p-7">
               <h2 className="text-2xl font-semibold  flex items-center justify-center gap-3">
@@ -42,7 +43,7 @@ const Pricing = () => {
                 ))}
               </div>
               <Button
-                className="border w-full bg-primary text-gray-400"
+                className="border w-full bg-primary text-white"
                 icon={<IconArrowRight size={18} />}
               >
                 Order Now

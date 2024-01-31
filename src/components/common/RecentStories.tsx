@@ -1,35 +1,38 @@
 "use client";
-import HeadingText from "@/util/HeadingText";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import news from "../../../../public/db/news.json";
+import news from "../../../public/db/news.json";
 
 // Import Swiper styles
-import NewsCard from "@/components/common/NewsCard";
+
 import Button from "@/util/Button";
+import HeadingDescription from "@/util/HeadingDescription";
 import { IconArrowRight } from "@tabler/icons-react";
+import { usePathname } from "next/navigation";
 import "swiper/css";
+import StoryCard from "./StoryCard";
 
 const RecentStories = () => {
+  const path = usePathname();
+  const perPage = path === "/about-us" ? 4 : 6;
+
   return (
-    <div className="my-24">
-      <div className="mb-12">
-        <HeadingText className="text-center">Recent Stories</HeadingText>
-        <p className="text-center">
-          We offer a wide range of funeral services and arrangements to <br />{" "}
-          help you honor and celebrate the life of your loved one.
-        </p>
-      </div>
+    <div className="my-20">
+      <HeadingDescription
+        className="text-center mb-14"
+        headingText="Recent Stories"
+        descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
+      />
 
       <Swiper
         spaceBetween={15}
-        slidesPerView={6}
+        slidesPerView={perPage}
         modules={[Autoplay]}
         autoplay={true}
       >
         {news.map((item, index) => (
           <SwiperSlide key={index}>
-            <NewsCard data={item} />
+            <StoryCard data={item} />
           </SwiperSlide>
         ))}
       </Swiper>

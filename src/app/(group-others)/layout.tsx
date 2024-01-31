@@ -2,24 +2,24 @@
 
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
+import BreadCrumb from "@/util/BreadCrumb";
 import { usePathname } from "next/navigation";
 import React from "react";
 
 const GroupLayout = ({ children }: { children: React.ReactNode }) => {
   const path = usePathname();
   const text = path.slice(1);
-  const firstLetter = text.charAt(0).toUpperCase();
+  const breadCrumb = text.split("-").join(" ");
+
   return (
     <div>
       <div className="banner h-[400px]">
         <Navbar />
-        <div className="flex justify-center items-center mt-28 text-center">
-          <div className="space-y-2">
-            <h2 className="text-4xl text-white font-bold">
-              {firstLetter + text.slice(1)}
-            </h2>
-            <p className="text-white">Home-Contact</p>
-          </div>
+        <div className="flex flex-col justify-center items-center space-y-3 mt-28 text-center">
+          <h2 className="text-4xl text-white font-semibold capitalize tracking-wide">
+            {breadCrumb}
+          </h2>
+          <BreadCrumb title={breadCrumb} />
         </div>
       </div>
       <div className="min-h-screen">{children}</div>

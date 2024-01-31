@@ -17,8 +17,21 @@ export interface IInput {
   onChange?: React.EventHandler<React.ChangeEvent<HTMLInputElement>>;
 }
 
-export interface INewsCard {
+export interface IStoryCard {
+  id: string | number;
   title: string;
   image: string;
   date: string;
+}
+export interface IServiceCard {
+  id: string | number;
+  title: string;
+  image: string;
+  description: string;
+}
+
+export interface IHeadingDescription {
+  headingText: string;
+  descriptionText?: string;
+  className?: string;
 }

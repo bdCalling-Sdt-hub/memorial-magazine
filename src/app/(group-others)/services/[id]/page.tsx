@@ -1,16 +1,19 @@
 "use client";
 
-import { useParams, usePathname, useRouter } from "next/navigation";
+import Contact from "@/components/common/Contact";
+import Media from "@/components/ui/ServiceDetail/Media";
 
 const ServiceDetailsPage = ({ params }: { params: string }) => {
-  const id = useParams();
-  const path = usePathname();
-  const search = useRouter();
+  // const id = useParams();
+  // const path = usePathname();
+  // const search = useRouter();
 
-  console.log(id, path, search);
   return (
-    <div>
-      <h2>Service Detail page</h2>
+    <div className="container my-10">
+      <Media />
+      <div className="my-20">
+        <Contact />
+      </div>
     </div>
   );
 };
