@@ -30,7 +30,7 @@ const QualityService = () => {
     },
   ];
   return (
-    <div className={`${path === "/services" ? "" : "bg-secondary"}`}>
+    <div className={`${path === "/services" ? "" : "bg-secondary py-20"}`}>
       <div className="container">
         <HeadingDescription
           className="text-center mb-14"

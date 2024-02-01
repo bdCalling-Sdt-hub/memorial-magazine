@@ -35,3 +35,12 @@ export interface IHeadingDescription {
   descriptionText?: string;
   className?: string;
 }
+
+export type IPricingCard = {
+  id: string | number;
+  title: string;
+  price: number | string;
+  photo: number | string;
+  month: string;
+  facilities: string[];
+};

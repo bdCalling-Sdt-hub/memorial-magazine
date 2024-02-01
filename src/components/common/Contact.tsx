@@ -4,10 +4,10 @@ import Input from "@/util/Input";
 
 const Contact = () => {
   return (
-    <div className="container">
+    <div className="container my-24">
       <HeadingDescription
         className="text-center mb-14"
-        headingText="Quality Services"
+        headingText="Contact Us"
         descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
       />
       <form className="grid grid-cols-12 gap-4 mt-10">

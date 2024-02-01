@@ -16,9 +16,7 @@ const StoriesPage = () => {
           <StoryCard key={index} data={story} />
         ))}
       </div>
-      <div className="mt-20">
-        <Contact />
-      </div>
+      <Contact />
     </div>
   );
 };

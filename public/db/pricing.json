@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "Ouarter Page",
     "price": 99,
     "photo": 3,
@@ -14,6 +15,7 @@
     ]
   },
   {
+    "id": 1,
     "title": "Half a Page",
     "price": 250,
     "photo": 4,
@@ -28,6 +30,7 @@
     ]
   },
   {
+    "id": 1,
     "title": "Full Page",
     "price": 500,
     "photo": 6,

@@ -11,9 +11,7 @@ const ServiceDetailsPage = ({ params }: { params: string }) => {
   return (
     <div className="container my-10">
       <Media />
-      <div className="my-20">
-        <Contact />
-      </div>
+      <Contact />
     </div>
   );
 };

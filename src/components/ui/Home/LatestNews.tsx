@@ -22,7 +22,7 @@ const LatestNews = () => {
     },
   ];
   return (
-    <div className="container">
+    <div className="container my-24">
       <HeadingDescription
         className="text-center mb-14"
         headingText="Latest News"

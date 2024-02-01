@@ -13,7 +13,7 @@ const ServiceCard: React.FC<{ data: IServiceCard }> = ({ data }) => {
         <p>{description}</p>
         <Link href={`/services/${id}`}>
           <Button
-            className="border w-full text-black"
+            className="border w-full text-black mt-10"
             icon={<IconArrowRight size={18} />}
           >
             More Details

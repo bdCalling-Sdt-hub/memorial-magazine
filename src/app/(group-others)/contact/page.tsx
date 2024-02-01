@@ -1,7 +1,11 @@
+import Contact from "@/components/common/Contact";
+import Map from "@/components/ui/Contact/Map";
+
 const ContactPage = () => {
   return (
-    <div>
-      <h2>Contact page</h2>
+    <div className="my-16">
+      <Contact />
+      <Map />
     </div>
   );
 };
