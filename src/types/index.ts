@@ -44,3 +44,9 @@ export type IPricingCard = {
   month: string;
   facilities: string[];
 };
+
+export interface IInformation {
+  icon: JSX.Element;
+  title: string;
+  value: string[];
+}
