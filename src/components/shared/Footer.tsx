@@ -59,8 +59,12 @@ const Footer = () => {
       <div className="border-t py-7">
         <div className="flex items-center justify-between text-white container">
           <p>
-            {["Privacy Policy", "Terms & Conditions"].map((item) => (
-              <Link key={item} href="#" className="mr-3">
+            {["Privacy Policy", "Terms & Conditions"].map((item, index) => (
+              <Link
+                key={item}
+                href={index === 0 ? "/privacy-policy" : "terms-and-conditions"}
+                className="mr-3"
+              >
                 {item}
               </Link>
             ))}

@@ -23,6 +23,9 @@ export interface IStoryCard {
   image: string;
   date: string;
 }
+
+export interface IBlogCard extends IStoryCard {}
+
 export interface IServiceCard {
   id: string | number;
   title: string;

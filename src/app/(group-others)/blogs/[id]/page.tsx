@@ -1,15 +1,20 @@
 import Contact from "@/components/common/Contact";
 import RelatedStories from "@/components/common/RelatedStories";
-import StoryMedia from "@/components/ui/StoriesDetails/StoryMedia";
+import BlogMedia from "@/components/ui/BlogDetail/BlogMedia";
 import Input from "@/util/Input";
 import stories from "../../../../../public/db/news.json";
 
-const StoryDetailPage = ({ params: { id } }: { params: { id: string } }) => {
+const BlogDetailPage = ({ params: { id } }: { params: { id: string } }) => {
+  const categories = [
+    "People Stories",
+    "Uniformed Personal Stories",
+    "Pets Stories",
+  ];
   return (
     <div className="container my-16">
       <div className="grid grid-cols-12 gap-8">
         <div className="col-span-8">
-          <StoryMedia id={id} />
+          <BlogMedia id={id} />
         </div>
         <div className="col-span-4 space-y-5">
           <div className="shadow bg-white p-4 py-6 rounded">
@@ -23,19 +28,11 @@ const StoryDetailPage = ({ params: { id } }: { params: { id: string } }) => {
           </div>
           <div className="shadow bg-white p-4 py-6 rounded">
             <h2 className=" text-lg mb-4 border-l border-primary px-2">
-              Related Stories
+              Categories
             </h2>
-            {stories.slice(0, 5).map((story, index) => (
-              <div key={index} className="mb-3 flex items-center gap-2">
-                <img
-                  src={story.image}
-                  alt=""
-                  className="w-40 h-32 rounded-md"
-                />
-                <div>
-                  <p>{story.date}</p>
-                  <h2>{story.title}</h2>
-                </div>
+            {categories.slice(0, 5).map((category, index) => (
+              <div key={index} className="mb-3 border p-3 rounded shadow">
+                <h2>{category}</h2>
               </div>
             ))}
           </div>
@@ -47,4 +44,4 @@ const StoryDetailPage = ({ params: { id } }: { params: { id: string } }) => {
   );
 };
 
-export default StoryDetailPage;
+export default BlogDetailPage;

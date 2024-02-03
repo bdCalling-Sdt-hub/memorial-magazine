@@ -24,16 +24,16 @@ const Navbar = () => {
       path: "/pricing",
     },
     {
-      title: "Blog",
-      path: "/blog",
+      title: "Blogs",
+      path: "/blogs",
     },
   ];
   return (
     <div className="">
       <div className="container flex items-center justify-between py-2">
-        <div>
+        <Link href="/">
           <img src="/images/footerLogo.png" className="w-36" alt="" />
-        </div>
+        </Link>
         <div>
           <ul className={`flex items-center gap-10`}>
             {menuList.map((item) => (
