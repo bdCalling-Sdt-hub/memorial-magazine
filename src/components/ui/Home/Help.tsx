@@ -29,8 +29,8 @@ const Help = () => {
           <div key={index} className="flex gap-2 mb-5">
             <h2 className="text-primary">{item.icon}</h2>
             <div>
-              <h2 className="text-lg font-semibold">{item.title}</h2>
-              <p>{item.des}</p>
+              <h2 className="text-2xl font-semibold">{item.title}</h2>
+              <p className="mt-2">{item.des}</p>
             </div>
           </div>
         ))}

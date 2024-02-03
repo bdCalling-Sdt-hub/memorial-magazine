@@ -12,6 +12,9 @@ const config: Config = {
         primary: "#0071E3",
         secondary: "#eaf3fc",
       },
+      fontSize: {
+        "44px": "44px",
+      },
     },
     container: {
       center: true,

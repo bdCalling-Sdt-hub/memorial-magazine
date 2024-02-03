@@ -1,3 +1,5 @@
+"use client";
+
 import { IHeadingDescription } from "@/types";
 import React from "react";
 
@@ -8,8 +10,12 @@ const HeadingDescription: React.FC<IHeadingDescription> = ({
 }) => {
   return (
     <div className={`${className} space-y-2 `}>
-      <h2 className="text-4xl font-semibold  text-[#3A3A3A] ">{headingText}</h2>
-      <p className="">{descriptionText}</p>
+      <h2 className="text-3xl font-semibold  text-[#3A3A3A] ">{headingText}</h2>
+      <p className="">
+        {descriptionText!.slice(0, 59)}
+        <br />
+        {descriptionText!.slice(59)}
+      </p>
     </div>
   );
 };

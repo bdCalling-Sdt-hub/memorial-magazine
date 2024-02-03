@@ -32,7 +32,7 @@ const Testimonials = () => {
         >
           {[...Array(3)].map((item, index) => (
             <SwiperSlide key={index}>
-              <p className="my-4">
+              <p>
                 Your work is going to fill a large part of your life, and the
                 only way to be truly satisfied is to do what you believe is
                 great work. And the only way to do great work is to love what

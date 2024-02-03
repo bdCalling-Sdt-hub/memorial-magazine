@@ -4,7 +4,7 @@ import React from "react";
 
 const HeadingText: React.FC<IHeadingText> = ({ children, className = "" }) => {
   return (
-    <h2 className={`text-4xl font-semibold  text-[#3A3A3A] ${className}`}>
+    <h2 className={`text-6xl font-semibold  text-[#3A3A3A] ${className}`}>
       {children}
     </h2>
   );

@@ -8,12 +8,13 @@ import news from "../../../public/db/news.json";
 import Button from "@/util/Button";
 import HeadingDescription from "@/util/HeadingDescription";
 import { IconArrowRight } from "@tabler/icons-react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import "swiper/css";
 import StoryCard from "./StoryCard";
 
 const RecentStories = () => {
   const path = usePathname();
+  const router = useRouter();
   const perPage = path === "/about-us" ? 4 : 6;
 
   return (
@@ -39,6 +40,7 @@ const RecentStories = () => {
 
       <Button
         className="border border-primary text-primary  mx-auto mt-10"
+        onClick={() => router.push("/stories")}
         icon={<IconArrowRight size={20} />}
       >
         See More

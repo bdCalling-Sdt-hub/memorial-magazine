@@ -1,9 +1,15 @@
+import {
+  IconMailOpenedFilled,
+  IconMap,
+  IconPhone,
+  IconWorld,
+} from "@tabler/icons-react";
 import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className="bg-primary">
-      <div className="grid grid-cols-4 gap-16 text-white py-10 container">
+      <div className="grid grid-cols-4 gap-16 text-white py-[100px] container">
         <div>
           <img src="/images/footerLogo.png" alt="" />
           <p className="mt-5">
@@ -43,15 +49,26 @@ const Footer = () => {
         <div className="mx-auto">
           <h2 className="text-xl font-bold">Contact Info</h2>
           {[
-            "About Us",
-            "Services",
-            "Contact Us",
-            "Blog",
-            "Pricing",
-            "Team",
-          ].map((item) => (
-            <li key={item} className="list-none my-3">
-              <Link href="#">{item}</Link>
+            {
+              icon: <IconPhone />,
+              title: "(303) 274-8750",
+            },
+            {
+              icon: <IconMailOpenedFilled />,
+              title: "memorial_moment@gmail.com",
+            },
+            {
+              icon: <IconMap />,
+              title: "13005 Greenville Avenue California, TX 70240",
+            },
+            {
+              icon: <IconWorld />,
+              title: "Map & Directions",
+            },
+          ].map((item, index) => (
+            <li key={index} className="list-none my-4 flex items-center gap-2">
+              <h1>{item.icon}</h1>
+              <h1>{item.title}</h1>
             </li>
           ))}
         </div>

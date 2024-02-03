@@ -14,7 +14,7 @@ const Pricing = () => {
           headingText="Pricing"
           descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
         />
-        <div className="grid grid-cols-3 gap-4 ">
+        <div className="grid grid-cols-3 gap-4  mx-20">
           {pricingList.map((item, index) => (
             <PricingCard key={index} data={item} />
           ))}

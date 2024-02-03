@@ -7,14 +7,13 @@ const Banner = () => {
       <div className="grid grid-cols-2 gap-20 items-center container py-16">
         <div>
           <div className="space-y-3">
-            <h2 className="text-white  text-xl">
+            <h2 className="text-white  text-3xl">
               Welcome to Memorial Moments Magazine
             </h2>
-            <h2 className="text-4xl text-white font-semibold">
-              Unforgettable Moments,
-              <br /> Endless Love
+            <h2 className="text-6xl text-white font-semibold">
+              Unforgettable Moments, Endless Love
             </h2>
-            <p className="text-white">
+            <p className="text-white text-xl">
               We understand every funeral is different because every person
               isunique and each family situation is different.
             </p>
