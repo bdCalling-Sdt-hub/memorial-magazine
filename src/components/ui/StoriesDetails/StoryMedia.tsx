@@ -7,7 +7,7 @@ const StoryPart = ({ id }: { id: string }) => {
       <figure>
         <img
           src={story?.image}
-          className="w-full h-[450px] object-cover"
+          className="w-full h-[550px] object-cover rounded"
           alt=""
         />
         <figcaption className="mt-4 text-lg">{story?.date}</figcaption>
@@ -31,7 +31,7 @@ const StoryPart = ({ id }: { id: string }) => {
       <figure className="grid grid-cols-2 gap-4 mt-10 ">
         <img
           src={story?.image}
-          className="w-full h-[300px] object-cover"
+          className="w-full h-[300px] rounded object-cover"
           alt=""
         />
         <figcaption className="text-justify">

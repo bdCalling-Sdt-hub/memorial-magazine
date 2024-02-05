@@ -11,7 +11,7 @@ const BreadCrumb = ({ title, root }: { title: string; root: string }) => {
         </span>
       )}
 
-      <span className="flex  items-center tracking-wide">
+      <span className="flex  items-center tracking-wide lowercase">
         <IconChevronRight />
         <p>{title}</p>
       </span>

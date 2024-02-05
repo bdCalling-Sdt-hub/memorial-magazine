@@ -15,7 +15,7 @@ const GroupLayout = ({ children }: { children: React.ReactNode }) => {
   if (text.length === 2) {
     breadCrumb = text[1].split("-").join(" ");
   } else if (text.length === 3) {
-    breadCrumb = text[1] + " " + "Detail";
+    breadCrumb = text[1] + " " + "detail";
     root = text[1];
   }
 
