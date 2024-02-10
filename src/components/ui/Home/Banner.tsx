@@ -10,7 +10,7 @@ const Banner = () => {
             <h2 className="text-white  text-3xl">
               Welcome to Memorial Moments Magazine
             </h2>
-            <h2 className="text-6xl text-white font-semibold">
+            <h2 className="text-5xl text-white font-semibold">
               Unforgettable Moments, Endless Love
             </h2>
             <p className="text-white text-xl">
@@ -20,8 +20,12 @@ const Banner = () => {
           </div>
 
           <div className="flex items-center gap-4 mt-12">
-            <img src="/images/Apple.png" className="w-40" alt="Banner" />
-            <img src="/images/Google.png" className="w-40" alt="Banner" />
+            <a href="#">
+              <img src="/images/Apple.png" className="w-40" alt="Banner" />
+            </a>
+            <a href="#">
+              <img src="/images/Google.png" className="w-40" alt="Banner" />
+            </a>
           </div>
         </div>
         <div>
