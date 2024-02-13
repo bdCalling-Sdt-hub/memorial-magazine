@@ -2,7 +2,6 @@ import Contact from "@/components/common/Contact";
 import RelatedStories from "@/components/common/RelatedStories";
 import BlogMedia from "@/components/ui/BlogDetail/BlogMedia";
 import Input from "@/util/Input";
-import stories from "../../../../../public/db/news.json";
 
 const BlogDetailPage = ({ params: { id } }: { params: { id: string } }) => {
   const categories = [
@@ -38,7 +37,7 @@ const BlogDetailPage = ({ params: { id } }: { params: { id: string } }) => {
           </div>
         </div>
       </div>
-      <RelatedStories stories={stories} />
+      <RelatedStories />
       <Contact />
     </div>
   );

@@ -1,9 +1,8 @@
-import { IBlogCard } from "@/types";
 import Button from "@/util/Button";
 import { IconArrowRight } from "@tabler/icons-react";
 import Link from "next/link";
 
-const BlogCard = ({ data }: { data: IBlogCard }) => {
+const BlogCard = ({ data }: { data: any }) => {
   const { image, title, id, date } = data;
   return (
     <div className="bg-white rounded-xl">

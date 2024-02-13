@@ -1,17 +1,15 @@
+"use client";
 import StoryCard from "@/components/common/StoryCard";
-import { IStoryCard } from "@/types";
+import { useGetStoriesQuery } from "@/redux/features/story/storyApi";
 import HeadingDescription from "@/util/HeadingDescription";
 
-type IRelatedStories = {
-  stories: IStoryCard[];
-};
-
-const RelatedStories = ({ stories }: IRelatedStories) => {
+const RelatedStories = () => {
+  const { data } = useGetStoriesQuery(undefined);
   return (
     <section>
       <HeadingDescription className="my-14" headingText="Related Stories" />
       <div className="grid grid-cols-4 gap-5">
-        {stories.slice(0, 4).map((item, index) => (
+        {data?.data?.map((item: any, index: number) => (
           <StoryCard key={index} data={item} />
         ))}
       </div>

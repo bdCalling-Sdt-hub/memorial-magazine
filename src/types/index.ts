@@ -14,14 +14,18 @@ export interface IButton {
 export interface IInput {
   placeholder?: string;
   className?: string;
+  name?: string;
+  value?: string;
   onChange?: React.EventHandler<React.ChangeEvent<HTMLInputElement>>;
 }
 
 export interface IStoryCard {
   id: string | number;
-  title: string;
-  image: string;
+  story_title: string;
+  story_image: string[];
   date: string;
+  birth_date: string;
+  death_date: string;
 }
 
 export interface IBlogCard extends IStoryCard {}

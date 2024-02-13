@@ -1,10 +1,10 @@
 "use client";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import news from "../../../public/db/news.json";
 
 // Import Swiper styles
 
+import { useGetStoriesQuery } from "@/redux/features/story/storyApi";
 import Button from "@/util/Button";
 import HeadingDescription from "@/util/HeadingDescription";
 import { IconArrowRight } from "@tabler/icons-react";
@@ -16,6 +16,7 @@ const RecentStories = () => {
   const path = usePathname();
   const router = useRouter();
   const perPage = path === "/about-us" ? 4 : 6;
+  const { data, isLoading, isError } = useGetStoriesQuery(undefined);
 
   return (
     <div className="my-20">
@@ -31,7 +32,7 @@ const RecentStories = () => {
         modules={[Autoplay]}
         autoplay={true}
       >
-        {news.map((item, index) => (
+        {data?.data?.map((item: any, index: number) => (
           <SwiperSlide key={index}>
             <StoryCard data={item} />
           </SwiperSlide>

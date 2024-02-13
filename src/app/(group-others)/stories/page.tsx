@@ -1,7 +1,6 @@
 import Contact from "@/components/common/Contact";
-import StoryCard from "@/components/common/StoryCard";
+import Stories from "@/components/ui/story/Stories";
 import HeadingDescription from "@/util/HeadingDescription";
-import stories from "../../../../public/db/news.json";
 
 const StoriesPage = () => {
   return (
@@ -11,11 +10,7 @@ const StoriesPage = () => {
         headingText="All Stories"
         descriptionText="We offer a wide range of funeral services and arrangements to help you honor and celebrate the life of your loved one."
       />
-      <div className="grid grid-cols-4 gap-4 my-10">
-        {stories.map((story, index) => (
-          <StoryCard key={index} data={story} />
-        ))}
-      </div>
+      <Stories />
       <Contact />
     </div>
   );

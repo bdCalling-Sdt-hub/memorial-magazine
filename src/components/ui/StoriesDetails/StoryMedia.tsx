@@ -1,16 +1,20 @@
-import stories from "../../../../public/db/news.json";
+"use client";
+
+import { useGetStoriesDetailsQuery } from "@/redux/features/story/storyApi";
+import { imgUrl } from "../../../../config";
 
 const StoryPart = ({ id }: { id: string }) => {
-  const story = stories.find((story) => story.id.toString() === id);
+  const { data } = useGetStoriesDetailsQuery(id);
+
   return (
     <div className="text-justify">
       <figure>
         <img
-          src={story?.image}
+          src={`${imgUrl}${data?.data?.story_image[0]}`}
           className="w-full h-[550px] object-cover rounded"
           alt=""
         />
-        <figcaption className="mt-4 text-lg">{story?.date}</figcaption>
+        <figcaption className="mt-4 text-lg">{""}</figcaption>
       </figure>
 
       <h2 className="text-2xl font-semibold text-primary my-3">
@@ -30,7 +34,7 @@ const StoryPart = ({ id }: { id: string }) => {
 
       <figure className="grid grid-cols-2 gap-4 mt-10 ">
         <img
-          src={story?.image}
+          src={`${imgUrl}${data?.data?.story_image[1]}`}
           className="w-full h-[300px] rounded object-cover"
           alt=""
         />
