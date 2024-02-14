@@ -11,7 +11,6 @@ const StoryCard: React.FC<{ data: IStoryCard }> = ({ data }) => {
   const birth = new Date(birth_date);
   const dead = new Date(death_date);
 
-  console.log("story card", data);
   return (
     <div
       className="relative rounded-md cursor-pointer"

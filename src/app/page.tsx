@@ -7,7 +7,6 @@ import Team from "@/components/common/Team";
 import Footer from "@/components/shared/Footer";
 import Banner from "@/components/ui/Home/Banner";
 import Help from "@/components/ui/Home/Help";
-import LatestNews from "@/components/ui/Home/LatestNews";
 import Testimonials from "@/components/ui/Home/Testimonials";
 
 export default function Home() {
@@ -20,7 +19,7 @@ export default function Home() {
       <Team />
       <Testimonials />
       <Pricing />
-      <LatestNews />
+
       <Contact />
       <Footer />
     </>

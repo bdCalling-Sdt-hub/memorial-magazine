@@ -23,10 +23,6 @@ const Navbar = () => {
       title: "Pricing",
       path: "/pricing",
     },
-    {
-      title: "Blogs",
-      path: "/blogs",
-    },
   ];
   return (
     <div className="">

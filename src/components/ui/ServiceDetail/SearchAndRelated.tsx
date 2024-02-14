@@ -8,7 +8,10 @@ import { imgUrl } from "../../../../config";
 
 const SearchAndRelated = ({ id }: { id: string }) => {
   const { data: dataDetail } = useGetStoriesDetailsQuery(id);
-  const { data } = useGetStoriesQuery(undefined);
+  const { data } = useGetStoriesQuery(undefined, {
+    pollingInterval: 30000,
+    refetchOnMountOrArgChange: true,
+  });
   const categoryId = dataDetail?.data?.category_id;
 
   const relateStories = data?.data.filter(

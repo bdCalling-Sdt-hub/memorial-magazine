@@ -1,4 +1,5 @@
 "use client";
+import { useGetPricingQuery } from "@/redux/features/pricing/pricingApi";
 import HeadingDescription from "@/util/HeadingDescription";
 import { usePathname } from "next/navigation";
 import pricingList from "../../../public/db/pricing.json";
@@ -6,6 +7,8 @@ import PricingCard from "./PricingCard";
 
 const Pricing = () => {
   const path = usePathname();
+  const { data } = useGetPricingQuery(undefined);
+  console.log(data?.data);
   return (
     <div className={`${path === "/pricing" ? "" : "bg-secondary py-20"}`}>
       <div className="container">
