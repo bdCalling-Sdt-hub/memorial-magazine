@@ -2,10 +2,10 @@ import Navbar from "../../shared/Navbar";
 
 const Banner = () => {
   return (
-    <div className="banner h-[900px]">
+    <div className="banner h-auto lg:h-[900px]">
       <Navbar />
-      <div className="grid grid-cols-2 gap-20 items-center container py-16">
-        <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center container py-16">
+        <div className="order-2 lg:order-1">
           <div className="space-y-3">
             <h2 className="text-white  text-3xl">
               Welcome to Memorial Moments Magazine
@@ -28,7 +28,7 @@ const Banner = () => {
             </a>
           </div>
         </div>
-        <div>
+        <div className="order-1 lg:order-2">
           <img
             src="/images/bannerImg.png"
             className="ml-auto w-4/6"

@@ -49,7 +49,7 @@ export type IPricingCard = {
   price: number | string;
   photo: number | string;
   month: string;
-  facilities: string[];
+  facilities: { feature: string }[];
 };
 
 export interface IInformation {
