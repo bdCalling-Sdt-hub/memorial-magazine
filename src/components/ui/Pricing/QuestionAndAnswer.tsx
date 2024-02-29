@@ -46,7 +46,7 @@ const QuestionAndAnswer = () => {
         headingText="Have You a Questions?"
         descriptionText="We offer a wide range of funeral services and arrangements to help you honor and celebrate the life of your loved one."
       />
-      <div className="grid grid-cols-2 gap-4 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
         {questions.map((ques, index) => (
           <div key={index}>
             <div className="bg-primary p-3 text-white">

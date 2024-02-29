@@ -9,7 +9,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="bg-primary">
-      <div className="grid grid-cols-4 gap-16 text-white py-[100px] container">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-16 text-white py-[100px] container">
         <div>
           <img src="/images/footerLogo.png" alt="" />
           <p className="mt-5">
@@ -21,7 +21,7 @@ const Footer = () => {
             <img src="/images/Google.png" className="w-40" alt="Banner" />
           </div>
         </div>
-        <div className="mx-auto">
+        <div className="lg:mx-auto">
           <h2 className="text-xl font-bold">Quick Links</h2>
           {[
             "About Us",
@@ -36,7 +36,7 @@ const Footer = () => {
             </li>
           ))}
         </div>
-        <div className="mx-auto">
+        <div className="lg:mx-auto">
           <h2 className="text-xl font-bold">Services</h2>
           {["Individual Stories", "Veteran Stories", "Pets Stories"].map(
             (item) => (
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t py-7">
-        <div className="flex items-center justify-between text-white container">
+        <div className="lg:flex items-center justify-between text-white container text-center lg:text-left">
           <p>
             {["Privacy Policy", "Terms & Conditions"].map((item, index) => (
               <Link

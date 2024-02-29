@@ -22,7 +22,7 @@ const More = () => {
       />
       <div className="mt-12">
         <img src="/images/about.png" alt="" />
-        <div className="grid grid-cols-2 gap-5 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
           {items.map((item, index) => (
             <div key={index} className="space-y-2">
               <h2 className="text-2xl font-bold">

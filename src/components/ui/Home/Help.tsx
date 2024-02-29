@@ -15,7 +15,7 @@ const Help = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-2 container my-24 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 container my-24 items-center">
       <div className="space-y-5">
         <HeadingText>
           We are here to <br /> help you

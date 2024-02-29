@@ -28,9 +28,14 @@ const RecentStories = () => {
 
       <Swiper
         spaceBetween={15}
-        slidesPerView={perPage}
+        slidesPerView={1}
         modules={[Autoplay]}
         autoplay={true}
+        breakpoints={{
+          690: {
+            slidesPerView: perPage,
+          },
+        }}
       >
         {data?.data?.map((item: any, index: number) => (
           <SwiperSlide key={index}>

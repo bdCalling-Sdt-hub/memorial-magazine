@@ -7,7 +7,7 @@ import PricingCard from "./PricingCard";
 const Pricing = () => {
   const path = usePathname();
   const { data, isLoading } = useGetPricingQuery(undefined);
-  console.log(data?.data);
+
   return (
     <div className={`${path === "/pricing" ? "" : "bg-secondary py-20"}`}>
       <div className="container">
@@ -19,7 +19,7 @@ const Pricing = () => {
         {isLoading ? (
           <h1>Loading...</h1>
         ) : (
-          <div className="grid grid-cols-3 gap-4  mx-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4  lg:mx-20">
             {data?.data.map((item: any, index: number) => (
               <PricingCard key={index} data={item} />
             ))}

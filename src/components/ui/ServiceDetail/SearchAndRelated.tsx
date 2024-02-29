@@ -19,7 +19,7 @@ const SearchAndRelated = ({ id }: { id: string }) => {
   );
 
   return (
-    <div className="col-span-4 space-y-5">
+    <div className="col-span-12 lg:col-span-4 space-y-5">
       <div className="shadow bg-white p-4 py-6 rounded">
         <h2 className=" text-lg mb-4 border-l border-orange-400 px-2">
           Search

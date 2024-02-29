@@ -4,6 +4,7 @@
 
 body {
   background: #f4faff;
+  overflow-x: hidden;
 }
 
 .banner {

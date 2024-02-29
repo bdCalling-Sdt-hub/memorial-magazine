@@ -64,28 +64,28 @@ const Contact = () => {
       <form className="grid grid-cols-12 gap-4 mt-10" onSubmit={handleOnSubmit}>
         <Input
           onChange={handleOnChange}
-          className="col-span-6"
+          className="col-span-12 lg:col-span-6"
           placeholder="Full Name"
           name="fullName"
           value={contactData.fullName}
         />
         <Input
           onChange={handleOnChange}
-          className="col-span-6"
+          className="col-span-12 lg:col-span-6"
           placeholder="Phone Number"
           name="phone"
           value={contactData.phone}
         />
         <Input
           onChange={handleOnChange}
-          className="col-span-6"
+          className="col-span-12 lg:col-span-6"
           placeholder="Email"
           name="email"
           value={contactData.email}
         />
         <Input
           onChange={handleOnChange}
-          className="col-span-6"
+          className="col-span-12 lg:col-span-6"
           placeholder="Address"
           name="address"
           value={contactData.address}

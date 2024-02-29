@@ -7,7 +7,7 @@ const StoryDetailPage = ({ params: { id } }: { params: { id: string } }) => {
   return (
     <div className="container my-16">
       <div className="grid grid-cols-12 gap-8">
-        <div className="col-span-8">
+        <div className="col-span-12 lg:col-span-8">
           <StoryMedia id={id} />
         </div>
         <SearchAndRelated id={id} />

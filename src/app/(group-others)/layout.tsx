@@ -23,7 +23,7 @@ const GroupLayout = ({ children }: { children: React.ReactNode }) => {
     <div>
       <div className="banner h-[400px]">
         <Navbar />
-        <div className="flex flex-col justify-center items-center space-y-3 mt-28 text-center">
+        <div className="flex flex-col justify-center items-center space-y-3 py-28 text-center">
           <h2 className="text-7xl text-white font-semibold capitalize tracking-wide">
             {breadCrumb}
           </h2>

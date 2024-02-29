@@ -5,7 +5,7 @@ import QuesAnswer from "./QuesAnswer";
 const Media = () => {
   return (
     <div className="grid grid-cols-12 gap-8">
-      <div className="col-span-8">
+      <div className="col-span-12 lg:col-span-8">
         <div>
           <img
             src="/images/serviceDetail.png"
@@ -15,7 +15,7 @@ const Media = () => {
           <QuesAnswer />
         </div>
       </div>
-      <div className="col-span-4 space-y-5">
+      <div className="col-span-12 lg:col-span-4 space-y-5">
         <div className="shadow bg-white p-4 py-6 rounded">
           <h2 className="font-semibold text-lg mb-4">
             Memorial Moment Support

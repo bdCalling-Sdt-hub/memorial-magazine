@@ -32,7 +32,7 @@ const StoryPart = ({ id }: { id: string }) => {
         neque.
       </p>
 
-      <figure className="grid grid-cols-2 gap-4 mt-10 ">
+      <figure className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10 ">
         <img
           src={`${imgUrl}${data?.data?.story_image[1]}`}
           className="w-full h-[300px] rounded object-cover"

@@ -8,7 +8,7 @@ const RelatedStories = () => {
   return (
     <section>
       <HeadingDescription className="my-14" headingText="Related Stories" />
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
         {data?.data?.map((item: any, index: number) => (
           <StoryCard key={index} data={item} />
         ))}

@@ -21,7 +21,6 @@ const Testimonials = () => {
             clickable: true,
           }}
           modules={[Pagination, Autoplay]}
-          centeredSlides={true}
           autoplay={true}
           style={{
             width: "100%",
