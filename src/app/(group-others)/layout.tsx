@@ -21,7 +21,7 @@ const GroupLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div>
-      <div className="banner h-[400px]">
+      <div className="bannerTwo h-[400px]">
         <Navbar />
         <div className="flex flex-col justify-center items-center space-y-3 py-28 text-center">
           <h2 className="text-7xl text-white font-semibold capitalize tracking-wide">

@@ -4,11 +4,19 @@ const Banner = () => {
   return (
     <div className="banner h-auto lg:h-[900px]">
       <Navbar />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center container py-16">
-        <div className="order-2 lg:order-1">
+      <div className="grid grid-cols-1 lg:grid-cols-2 pt-44 container">
+        {/* <div className=" order-2 lg:order-1">
+          <img
+            src="/images/bannerImg.png"
+            className="ml-auto w-4/6"
+            alt="Banner"
+          />
+        </div> */}
+        <div></div>
+        <div className="order-1 lg:order-2">
           <div className="space-y-3">
             <h2 className="text-white  text-3xl">
-              Welcome to Memorial Moments Magazine
+              Welcome to <br /> Memorial Moments Magazine
             </h2>
             <h2 className="text-5xl text-white font-semibold">
               Unforgettable Moments, Endless Love
@@ -27,13 +35,6 @@ const Banner = () => {
               <img src="/images/Google.png" className="w-40" alt="Banner" />
             </a>
           </div>
-        </div>
-        <div className="order-1 lg:order-2">
-          <img
-            src="/images/bannerImg.png"
-            className="ml-auto w-4/6"
-            alt="Banner"
-          />
         </div>
       </div>
     </div>

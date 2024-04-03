@@ -9,7 +9,13 @@ body {
 
 .banner {
   width: 100%;
-  height: auto;
+  background: linear-gradient(#0873dec9, #01274f63), url("/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.bannerTwo {
+  width: 100%;
   background: linear-gradient(#0873dec9, #01274f63), url("/images/bg.png");
   background-repeat: no-repeat;
   background-position: center;
