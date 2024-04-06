@@ -9,6 +9,7 @@ body {
 
 .banner {
   width: 100%;
+  height: auto;
   background: linear-gradient(#0873dec9, #01274f63), url("/images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,10 +22,11 @@ body {
   background-position: center;
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .banner {
+    background-position: right;
   }
-} */
+}
 
 .swiper-pagination-bullet {
   width: 30px !important;
