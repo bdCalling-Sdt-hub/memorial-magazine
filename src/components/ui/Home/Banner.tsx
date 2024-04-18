@@ -15,16 +15,17 @@ const Banner = () => {
 
         <div className="order-2 lg:order-2">
           <div className="space-y-3">
+            {/* <img src="/images/bannerImg.png" className="w-56" alt="Banner" /> */}
             <h2 className="text-white text-xl lg:text-5xl">
               Welcome to <br /> Memorial Moments Magazine
             </h2>
             <h2 className="text-3xl lg:text-5xl text-white font-semibold">
               Unforgettable Moments, Endless Love
             </h2>
-            <p className="text-white text-xl">
+            {/* <p className="text-white text-xl">
               We understand every funeral is different because every person
               isunique and each family situation is different.
-            </p>
+            </p> */}
           </div>
 
           <div className="flex items-center gap-4 mt-12">
