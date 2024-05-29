@@ -12,9 +12,9 @@ const HeadingDescription: React.FC<IHeadingDescription> = ({
     <div className={`${className} space-y-2 `}>
       <h2 className="text-3xl font-semibold  text-[#3A3A3A] ">{headingText}</h2>
       <p className="">
-        {descriptionText!?.slice(0, 59)}
+        {descriptionText!?.slice(0, 65)}
         <br />
-        {descriptionText!?.slice(59)}
+        {descriptionText!?.slice(65)}
       </p>
     </div>
   );

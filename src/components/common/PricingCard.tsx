@@ -1,9 +1,4 @@
-import Button from "@/util/Button";
-import {
-  IconArrowRight,
-  IconCheck,
-  IconChessQueenFilled,
-} from "@tabler/icons-react";
+import { IconCheck, IconChessQueenFilled } from "@tabler/icons-react";
 
 const PricingCard = ({ data }: { data: any }) => {
   const { package_name, duration, image_limit, amount, feature } = data;
@@ -30,12 +25,12 @@ const PricingCard = ({ data }: { data: any }) => {
         ))}
       </div>
 
-      <Button
+      {/* <Button
         className="border w-full bg-primary text-white mt-auto block"
         icon={<IconArrowRight size={18} />}
       >
         Order Now
-      </Button>
+      </Button> */}
     </div>
   );
 };

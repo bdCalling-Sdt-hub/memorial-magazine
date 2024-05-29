@@ -1,6 +1,5 @@
 import Contact from "@/components/common/Contact";
 import RecentStories from "@/components/common/RecentStories";
-import Team from "@/components/common/Team";
 import More from "@/components/ui/About/More";
 
 const AboutPage = () => {
@@ -8,7 +7,7 @@ const AboutPage = () => {
     <div className="container my-20">
       <More />
       <RecentStories />
-      <Team />
+      {/* <Team /> */}
       <Contact />
     </div>
   );

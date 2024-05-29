@@ -20,10 +20,10 @@ const Banner = () => {
               className="w-full lg:w-64 mx-auto"
               alt="Banner"
             />
-            <h2 className="text-white text-xl lg:text-5xl">
+            <h2 className="text-white text-2xl lg:text-5xl font-bold">
               Welcome to <br /> Memorial Moments Magazine
             </h2>
-            <h2 className="text-3xl lg:text-5xl text-white font-semibold">
+            <h2 className="text-xl lg:text-xl text-white font-semibold">
               Unforgettable Moments, Endless Love
             </h2>
           </div>

@@ -10,9 +10,9 @@ const QualityService = () => {
     {
       id: 1,
       image: "/images/service1.png",
-      title: "All People Memorial Moments",
+      title: "Memorial Moments For All Loved Ones",
       description:
-        "Memorial Moments Magazine People Stories section serves as a platform to celebrate the diverse, touching, and impactful narratives of individuals, foste",
+        "Memorial Moments Magazine Your loved One stories from your point of view.",
     },
     {
       id: 2,
@@ -33,9 +33,9 @@ const QualityService = () => {
     <div className={`${path === "/services" ? "" : "bg-secondary py-20"}`}>
       <div className="container">
         <HeadingDescription
-          className="text-center mb-14"
-          headingText="Quality Services"
-          descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
+          className="text-center mb-14 capitalize"
+          headingText="Magazine Sections"
+          //descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
         />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {qualityService.map((item, index) => (

@@ -23,14 +23,7 @@ const Footer = () => {
         </div>
         <div className="lg:mx-auto">
           <h2 className="text-xl font-bold">Quick Links</h2>
-          {[
-            "About Us",
-            "Services",
-            "Contact Us",
-            "Blog",
-            "Pricing",
-            "Team",
-          ].map((item) => (
+          {["Services", "Contact Us", "Blog", "Pricing", "Team"].map((item) => (
             <li key={item} className="list-none my-3">
               <Link href="#">{item}</Link>
             </li>

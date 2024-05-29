@@ -22,8 +22,8 @@ const RecentStories = () => {
     <div className="my-20">
       <HeadingDescription
         className="text-center mb-14"
-        headingText="Recent Stories"
-        descriptionText="We offer a wide range of funeral services and arrangements to  help you honor and celebrate the life of your loved one."
+        headingText="Your Stories"
+        descriptionText="Tell your stories of your love one,who has moved to next level of their life"
       />
 
       <Swiper
