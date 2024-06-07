@@ -1,11 +1,9 @@
-import Contact from "@/components/common/Contact";
-import Media from "@/components/ui/ServiceDetail/Media";
+import ServiceDetail from "@/components/ui/ServiceDetail/ServiceDetail";
 
 const ServiceDetailsPage = () => {
   return (
     <div className="container my-10">
-      <Media />
-      <Contact />
+      <ServiceDetail />
     </div>
   );
 };

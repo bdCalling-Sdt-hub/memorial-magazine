@@ -8,8 +8,14 @@ const termsPrivacyApi = api.injectEndpoints({
     getPrivacyPolicy: builder.query({
       query: () => "/privacy/policy",
     }),
+    getAbout: builder.query({
+      query: () => "/about",
+    }),
   }),
 });
 
-export const { useGetTermsAndConditionQuery, useGetPrivacyPolicyQuery } =
-  termsPrivacyApi;
+export const {
+  useGetTermsAndConditionQuery,
+  useGetPrivacyPolicyQuery,
+  useGetAboutQuery,
+} = termsPrivacyApi;

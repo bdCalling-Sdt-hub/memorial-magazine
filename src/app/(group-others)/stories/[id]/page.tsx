@@ -1,6 +1,5 @@
 import Contact from "@/components/common/Contact";
 import RelatedStories from "@/components/common/RelatedStories";
-import SearchAndRelated from "@/components/ui/ServiceDetail/SearchAndRelated";
 import StoryMedia from "@/components/ui/StoriesDetails/StoryMedia";
 
 const StoryDetailPage = ({ params: { id } }: { params: { id: string } }) => {
@@ -10,7 +9,7 @@ const StoryDetailPage = ({ params: { id } }: { params: { id: string } }) => {
         <div className="col-span-12 lg:col-span-8">
           <StoryMedia id={id} />
         </div>
-        <SearchAndRelated id={id} />
+        {/* <SearchAndRelated id={id} /> */}
       </div>
       <RelatedStories />
       <Contact />

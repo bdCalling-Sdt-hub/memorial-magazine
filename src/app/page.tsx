@@ -10,7 +10,7 @@ import Testimonials from "@/components/ui/Home/Testimonials";
 
 export default function Home() {
   return (
-    <>
+    <div className="px-5">
       <Banner />
       <RecentStories />
       <QualityService />
@@ -20,6 +20,6 @@ export default function Home() {
       <Pricing />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }

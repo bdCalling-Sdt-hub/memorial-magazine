@@ -30,7 +30,7 @@ const GroupLayout = ({ children }: { children: React.ReactNode }) => {
           <BreadCrumb title={breadCrumb} root={root} />
         </div>
       </div>
-      <div>{children}</div>
+      <div className="px-5">{children}</div>
       <Footer />
     </div>
   );

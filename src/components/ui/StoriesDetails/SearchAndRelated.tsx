@@ -3,13 +3,11 @@ import {
   useGetStoriesDetailsQuery,
   useGetStoriesQuery,
 } from "@/redux/features/story/storyApi";
-import Input from "@/util/Input";
 import { imgUrl } from "../../../../config";
 
 const SearchAndRelated = ({ id }: { id: string }) => {
   const { data: dataDetail } = useGetStoriesDetailsQuery(id);
   const { data } = useGetStoriesQuery(undefined, {
-    pollingInterval: 30000,
     refetchOnMountOrArgChange: true,
   });
   const categoryId = dataDetail?.data?.category_id;
@@ -20,12 +18,12 @@ const SearchAndRelated = ({ id }: { id: string }) => {
 
   return (
     <div className="col-span-12 lg:col-span-4 space-y-5">
-      <div className="shadow bg-white p-4 py-6 rounded">
+      {/* <div className="shadow bg-white p-4 py-6 rounded">
         <h2 className=" text-lg mb-4 border-l border-orange-400 px-2">
           Search
         </h2>
         <Input className="w-full border-gray-200" placeholder="Search Here" />
-      </div>
+      </div> */}
       <div className="shadow bg-white p-4 py-6 rounded">
         <h2 className=" text-lg mb-4 border-l border-primary px-2">
           Related Stories

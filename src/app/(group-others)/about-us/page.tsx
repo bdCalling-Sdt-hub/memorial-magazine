@@ -1,4 +1,3 @@
-import Contact from "@/components/common/Contact";
 import RecentStories from "@/components/common/RecentStories";
 import More from "@/components/ui/About/More";
 
@@ -8,7 +7,7 @@ const AboutPage = () => {
       <More />
       <RecentStories />
       {/* <Team /> */}
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };

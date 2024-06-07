@@ -1,4 +1,3 @@
-import Contact from "@/components/common/Contact";
 import Stories from "@/components/ui/story/Stories";
 import HeadingDescription from "@/util/HeadingDescription";
 
@@ -11,7 +10,7 @@ const StoriesPage = () => {
         descriptionText="We offer a wide range of funeral services and arrangements to help you honor and celebrate the life of your loved one."
       />
       <Stories />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };
