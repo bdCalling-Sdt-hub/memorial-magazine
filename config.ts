@@ -1,1 +1,1 @@
-export const imgUrl = "http://server.memorialmoments.org";
+export const imgUrl = "https://server.memorialmoments.org";
